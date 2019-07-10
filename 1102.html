@@ -1,0 +1,42 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+</head>
+<body>
+<script type="text/javascript">
+
+function palindrome(message){
+    var result = '' ;
+	var num = 0 ;
+ 
+		for (var i=0; i<Math.floor(message.length/2); i++){
+			if(message.charAt(i) == message.charAt(message.length-i-1))
+				 num = num + 1 ;			
+			}
+		if(num == Math.floor(message.length/2))
+			result='true';
+		else
+			result='false';
+	 
+	return result ;
+ }
+document.write(palindrome('hello'));  
+document.write('<br>');  
+document.write(palindrome('abcba'));  
+
+ 
+</script>	
+</body>
+</html>
+
+
+
+
+
+
+
+ 
+   
+
+
